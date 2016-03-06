@@ -15,6 +15,7 @@
 		6545D8DF1C8BA2AE004B5D5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6545D8DD1C8BA2AE004B5D5B /* LaunchScreen.storyboard */; };
 		6545D8EA1C8BA2AE004B5D5B /* GoogleAdMobTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6545D8E91C8BA2AE004B5D5B /* GoogleAdMobTestTests.swift */; };
 		6545D8F51C8BA2AE004B5D5B /* GoogleAdMobTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6545D8F41C8BA2AE004B5D5B /* GoogleAdMobTestUITests.swift */; };
+		6545D9051C8BA676004B5D5B /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6545D9041C8BA676004B5D5B /* GoogleMobileAds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		6545D8F01C8BA2AE004B5D5B /* GoogleAdMobTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleAdMobTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6545D8F41C8BA2AE004B5D5B /* GoogleAdMobTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAdMobTestUITests.swift; sourceTree = "<group>"; };
 		6545D8F61C8BA2AE004B5D5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6545D9041C8BA676004B5D5B /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6545D9051C8BA676004B5D5B /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 		6545D8C51C8BA2AE004B5D5B = {
 			isa = PBXGroup;
 			children = (
+				6545D9041C8BA676004B5D5B /* GoogleMobileAds.framework */,
 				6545D8D01C8BA2AE004B5D5B /* GoogleAdMobTest */,
 				6545D8E81C8BA2AE004B5D5B /* GoogleAdMobTestTests */,
 				6545D8F31C8BA2AE004B5D5B /* GoogleAdMobTestUITests */,
@@ -403,6 +407,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleAdMobTest",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = GoogleAdMobTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = company.GoogleAdMobTest;
@@ -414,6 +423,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleAdMobTest",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = GoogleAdMobTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = company.GoogleAdMobTest;
